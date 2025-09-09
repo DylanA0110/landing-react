@@ -1,10 +1,10 @@
 "use client";
 import { motion, useInView } from "framer-motion";
-import * as React from "react";
+import { useRef } from "react";
 import { blurIn } from "../../utility/animation";
 
 export const About = () => {
-  const ref = React.useRef(null);
+  const ref = useRef(null);
   const isInView = useInView(ref, { once: false, margin: "-100px" });
 
   return (

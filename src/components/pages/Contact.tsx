@@ -1,11 +1,10 @@
-'use client';
-import { motion, useInView } from 'framer-motion';
-import * as React from 'react';
-import { blurIn } from '../../utility/animation';
-
+"use client";
+import { motion, useInView } from "framer-motion";
+import { blurIn } from "../../utility/animation";
+import { useRef } from "react";
 
 export const Contact = () => {
-  const ref = React.useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: false, margin: "-100px" });
 
   return (
@@ -23,10 +22,11 @@ export const Contact = () => {
           animate={isInView ? blurIn(0.2).animate : {}}
           className="text-lg sm:text-xl max-w-3xl mx-auto"
         >
-          En Magic Quest, nuestro equipo está disponible para atender cualquier consulta o comentario que tengas. 
-          Ya sea que quieras reportar un problema, sugerir mejoras o simplemente saludar, 
-          puedes contactarnos vía correo electrónico o a través de nuestras redes sociales. 
-          Estamos comprometidos a brindarte la mejor experiencia posible.
+          En Magic Quest, nuestro equipo está disponible para atender cualquier
+          consulta o comentario que tengas. Ya sea que quieras reportar un
+          problema, sugerir mejoras o simplemente saludar, puedes contactarnos
+          vía correo electrónico o a través de nuestras redes sociales. Estamos
+          comprometidos a brindarte la mejor experiencia posible.
         </motion.p>
       </div>
     </section>
