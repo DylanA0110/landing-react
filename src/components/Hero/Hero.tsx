@@ -2,7 +2,7 @@ import Personaje from "@/assets/Personaje.png";
 import Logo from "@/assets/Logo.png";
 import { Gamepad2, Youtube } from "lucide-react";
 import { motion } from "framer-motion";
-import { slipeUp, slipeInFrom} from "../../utility/animation";
+import { slipeUp, slipeInFrom } from "../../utility/animation";
 
 export const Hero = () => {
   return (
@@ -42,18 +42,22 @@ export const Hero = () => {
               Jugar ahora
               <Gamepad2 className="text-xl ml-2" />
             </a>
-            <a className="text-white flex items-center cursor-pointer">
+            <a
+              className="text-white flex items-center cursor-pointer"
+              href="https://youtu.be/xQXrt0gAM6E?list=RDxQXrt0gAM6E"
+              target="blank"
+            >
               Ver GamePlay
               <Youtube className="text-xl ml-2" />
             </a>
           </motion.div>
         </div>
         {/* Imagen */}
-        <motion.div 
-        className="sm:p-10 md:p-15 lg:p-30 xl:p-36"
-        variants={slipeInFrom(0.5,'right')}
-            initial="initial"
-            animate="animate"
+        <motion.div
+          className="sm:p-10 md:p-15 lg:p-30 xl:p-36"
+          variants={slipeInFrom(0.5, "right")}
+          initial="initial"
+          animate="animate"
         >
           <img src={Personaje} alt="Personaje del juego" />
         </motion.div>
