@@ -31,3 +31,10 @@ export const slipeInFrom = (delay:number, direction:string='left')=>{
         }
     }
 } 
+
+export const blurIn = (delay: number = 0) => {
+  return {
+    initial: { filter: 'blur(20px)', opacity: 0 },
+    animate: { filter: 'blur(0px)', opacity: 1, transition: { duration: 1.2, delay } },
+  };
+};

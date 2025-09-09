@@ -10,26 +10,10 @@ interface NavBarLinks {
 }
 
 const navBarLinks: NavBarLinks[] = [
-  {
-    id: 1,
-    title: "Inicio",
-    link: "/",
-  },
-  {
-    id: 2,
-    title: "Nosotros",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Contacto",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Soporte",
-    link: "#",
-  },
+  { id: 1, title: "Inicio", link: "#home" },
+  { id: 2, title: "Nosotros", link: "#about" },
+  { id: 3, title: "Soporte", link: "#support" },
+  { id: 4, title: "Contacto", link: "#contact" },
 ];
 
 const navBarRedes: NavBarLinks[] = [
