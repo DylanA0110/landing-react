@@ -6,7 +6,7 @@ import { blurIn } from '../../utility/animation';
 
 export const Contact = () => {
   const ref = React.useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: false, margin: "-100px" });
 
   return (
     <section id="contact" className="py-20 text-white">
