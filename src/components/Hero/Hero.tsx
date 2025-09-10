@@ -9,7 +9,7 @@ export const Hero = () => {
     <section className="mt-36">
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Texto */}
-        <div className="sm:p-10 md:p-15 lg:p-30 xl:p-36">
+        <div className="px-4 sm:px-6 md:px-10 py-10">
           <motion.img
             variants={slipeUp(0.2)}
             initial="initial"
@@ -18,7 +18,7 @@ export const Hero = () => {
             alt="Logo"
           />
           <motion.p
-            className="py-12 text-white"
+            className="py-10 text-white max-w-2xl mx-auto"
             variants={slipeUp(0.3)}
             initial="initial"
             animate="animate"
